@@ -9,7 +9,7 @@ const Kids = () => {
     <div className='flex justify-center mt-24 '>
       <div className='max-w-7xl max-auto '>
         <div>
-          <img src="/assets/kidBanner.jpg" alt="" className="w-screen px-6 h-[650px]  " />
+          <img src="/assets/kidBanner.jpg" alt="" className="w-screen px-6 md:h-[650px] object-contain rounded-md max-sm:h-[300px] " />
         </div>
         <div className="auto-max max-w-2xl px-4 py-16 sm:pt-24 lg:max-w-7xl lg:px-8 ">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900 text-center md:text-start ">
