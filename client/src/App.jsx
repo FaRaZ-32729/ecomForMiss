@@ -20,6 +20,7 @@ import ListProducts from './pages/admin/ListProducts';
 import UpdateProduct from './pages/admin/UpdateProduct';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Gallrey from './pages/Gallrey';
 // import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="men" element={<Men />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="gallrey" element={<Gallrey />} />
           <Route path="women" element={<Women />} />
           <Route path="kids" element={<Kids />} />
           <Route path="cart" element={<Cart />} />

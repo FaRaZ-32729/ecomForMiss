@@ -55,7 +55,7 @@ const Navbar = () => {
 
               <NavLink to="/about"><li>About Us</li></NavLink>
               <NavLink to="/contact"><li>Contact Us</li></NavLink>
-              <NavLink to="/feedback"><li>Feedback</li></NavLink>
+              <NavLink to="/gallrey"><li>Gallrey</li></NavLink>
 
               {/* Login/Logout */}
               <button
