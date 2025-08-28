@@ -2,6 +2,7 @@ import userRouter from "./routes/userRoute.js"
 import authRouter from './routes/authRoute.js'
 import productRouter from './routes/productRoute.js'
 import profile from './routes/protectedRoute.js'
+import contact from './routes/contactRoutes.js'
 import cors from 'cors'
 import express from "express";
 import cookieparser from 'cookie-parser'
@@ -29,6 +30,7 @@ app.use("/user", userRouter);
 app.use("/auth", authRouter);
 app.use("/products", productRouter);
 app.use("/api", profile);
+app.use("/contact", contact);
 
 
 //prot
