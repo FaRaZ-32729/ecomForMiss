@@ -24,6 +24,7 @@ import Gallrey from './pages/Gallrey';
 import Messages from './pages/admin/Messages';
 import AddGallery from './pages/admin/AddGallrey';
 import ListGallrey from './pages/admin/ListGallrey';
+import AdminRoute from './components/ProtectedRoutes';
 // import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
@@ -44,18 +45,23 @@ const App = () => {
           <Route path="cart" element={<Cart />} />
           <Route path="product/:productId" element={<DetailPage />} />
         </Route>
-        <Route path='/admin' element={<AdminLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path='add-product' element={<AddProduct />} />
-          <Route path='all-products' element={<ListProducts />} />
-          <Route path='update-product/:id' element={<UpdateProduct />} />
-          <Route path='message' element={<Messages />} />
-          <Route path='add-image' element={<AddGallery />} />
-          <Route path='all-images' element={<ListGallrey />} />
+
+        <Route path='/admin' element={<AdminRoute />}>
+          <Route element={<AdminLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path='add-product' element={<AddProduct />} />
+            <Route path='all-products' element={<ListProducts />} />
+            <Route path='update-product/:id' element={<UpdateProduct />} />
+            <Route path='message' element={<Messages />} />
+            <Route path='add-image' element={<AddGallery />} />
+            <Route path='all-images' element={<ListGallrey />} />
+          </Route>
         </Route>
+
+
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
-      </Routes>
+      </Routes >
 
     </>
   );

@@ -5,9 +5,11 @@ import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 import Menu from './Menu'
 import UserContext from '../../context/UserContext'
 import ShowConfirmationToast from '../ShowConfirmationToast'
+import { ShopContext } from '../../context/ShopContext'
 
 const Navbar = () => {
   const { user, setUser } = useContext(UserContext);
+  const { getTotalItems } = useContext(ShopContext);
   const [showMenu, setShowMenu] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
   const navigate = useNavigate();
@@ -20,7 +22,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <NavLink to="/" >
-          <img src="/assets/logo.png" alt="logo" className='md:w-24 w-20' />
+          <img src="/assets/logo2.png" alt="logo" className='md:w-20 w-14' />
         </NavLink>
 
         <div className="flex items-center gap-5">
@@ -79,12 +81,12 @@ const Navbar = () => {
           {/* Cart Icon */}
           <NavLink to="/cart" className="relative w-10">
             <ShoppingCart />
-            <div className="bg-red-500 w-5 absolute -top-2 right-1 flex items-center justify-center rounded-full text-white text-xs">0</div>
+            {getTotalItems() > 0 && (
+              <div className="bg-red-500 w-5 h-5 absolute -top-2 right-1 flex items-center justify-center rounded-full text-white text-xs">
+                {getTotalItems()}
+              </div>
+            )}
           </NavLink>
-          {/* <NavLink to="/cart" className="relative w-10">
-            <Heart />
-            <div className="bg-red-500 w-5 absolute -top-2 right-1 flex items-center justify-center rounded-full text-white text-xs">0</div>
-          </NavLink> */}
 
           {/* Mobile Menu Toggle */}
           {showMenu ? (

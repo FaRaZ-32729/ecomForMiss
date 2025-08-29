@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Eye, EyeOff } from 'lucide-react';
 import React, { useContext, useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, replace, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import UserContext from '../context/UserContext';
 const URL = import.meta.env.VITE_Node_Api_Url;

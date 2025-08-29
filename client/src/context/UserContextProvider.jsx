@@ -9,8 +9,8 @@ const UserContextProvider = ({ children }) => {
 
     useEffect(() => {
         if (user && user.name) {
-            const { name, email } = user;
-            localStorage.setItem("user", JSON.stringify({ name, email }));
+            const { name, email , role } = user;
+            localStorage.setItem("user", JSON.stringify({ name, email , role}));
         } else {
             localStorage.removeItem("user");
         }
