@@ -6,6 +6,9 @@ const Sidebar = () => {
         { name: "Dashboard", path: "/admin", icon: "../public/assets/dashboard.svg" },
         { name: "Add-Product", path: "/admin/add-product", icon: "../public/assets/add.svg" },
         { name: "All-Products", path: "/admin/all-products", icon: "../public/assets/list.svg" },
+        { name: "Messages", path: "/admin/message", icon: "../public/assets/message.svg" },
+        { name: "Add-Image", path: "/admin/add-image", icon: "../public/assets/add.svg" },
+        { name: "All-Images", path: "/admin/all-images", icon: "../public/assets/image.svg" },
     ]
 
     return (

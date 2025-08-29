@@ -3,6 +3,8 @@ import authRouter from './routes/authRoute.js'
 import productRouter from './routes/productRoute.js'
 import profile from './routes/protectedRoute.js'
 import contact from './routes/contactRoutes.js'
+import gallrey from './routes/gallreyRoutes.js'
+import favourite from './routes/favouriteRoutes.js'
 import cors from 'cors'
 import express from "express";
 import cookieparser from 'cookie-parser'
@@ -31,6 +33,8 @@ app.use("/auth", authRouter);
 app.use("/products", productRouter);
 app.use("/api", profile);
 app.use("/contact", contact);
+app.use("/gallrey", gallrey);
+app.use("/favourite", favourite);
 
 
 //prot

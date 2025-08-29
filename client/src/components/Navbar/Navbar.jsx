@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import { ShoppingCart } from 'lucide-react'
+import { Heart, ShoppingCart } from 'lucide-react'
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 import Menu from './Menu'
 import UserContext from '../../context/UserContext'
@@ -39,7 +39,7 @@ const Navbar = () => {
               >
                 <span>Products ▾</span>
                 {openDropdown && (
-                  <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md w-40 text-base">
+                  <ul className="absolute left-0 mt-1 bg-white shadow-md rounded-md w-40 text-base">
                     <NavLink to="/men">
                       <li className="px-4 py-2 hover:bg-gray-100">Men</li>
                     </NavLink>
@@ -81,6 +81,10 @@ const Navbar = () => {
             <ShoppingCart />
             <div className="bg-red-500 w-5 absolute -top-2 right-1 flex items-center justify-center rounded-full text-white text-xs">0</div>
           </NavLink>
+          {/* <NavLink to="/cart" className="relative w-10">
+            <Heart />
+            <div className="bg-red-500 w-5 absolute -top-2 right-1 flex items-center justify-center rounded-full text-white text-xs">0</div>
+          </NavLink> */}
 
           {/* Mobile Menu Toggle */}
           {showMenu ? (

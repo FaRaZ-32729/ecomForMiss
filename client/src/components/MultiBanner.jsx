@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const MultiBanner = () => {
     return (
@@ -9,9 +10,11 @@ const MultiBanner = () => {
                     <img src="/assets/jackets.jpg" alt="New Arrival" className='w-full h-full object-cover rounded-lg shadow-lg' />
                     <div className="absolute inset-0 bg-gray-800 rounded-lg bg-opacity-50 flex flex-col items-center justify-center ">
                         <h2 className="text-white text-2xl font-bold "> New Arrivals </h2>
-                        <button className='mt-2 px-3 bg-white text-green-800 py-1  rounded-md shadow hover:bg-gray-200' >
-                            Discover
-                        </button>
+                        <NavLink to="/men">
+                            <button className='mt-2 px-3 bg-white text-green-800 py-1  rounded-md shadow hover:bg-gray-200' >
+                                Discover
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
 
@@ -30,7 +33,9 @@ const MultiBanner = () => {
                     <div className="absolute inset-0 bg-yellow-800 rounded-lg bg-opacity-50 flex flex-col items-center justify-center ">
                         <h2 className="text-white text-4xl font-bold "> Seasson Sale </h2>
                         <p className="text-white my-2 text-lg ">Upto 70% Off    </p>
-                        <button className="text-white bg-orange-600 px-3 py-2 hover:bg-orange-500 rounded-md  ">Shop Now</button>
+                        <NavLink to="/men">
+                            <button className="text-white bg-orange-600 px-3 py-2 hover:bg-orange-500 rounded-md  ">Shop Now</button>
+                        </NavLink>
                     </div>
                 </div>
 
@@ -40,7 +45,9 @@ const MultiBanner = () => {
                     <div className="absolute inset-0 bg-yellow-800 rounded-lg bg-opacity-50 flex flex-col items-center justify-center ">
                         <h2 className="text-white text-4xl font-bold "> Seasson Sale </h2>
                         <p className="text-white my-2 text-lg ">Upto 70% Off    </p>
-                        <button className="text-white bg-red-600 px-3 py-2 hover:bg-red-500 rounded-md  ">Shop Now</button>
+                        <NavLink to="/men">
+                            <button className="text-white bg-red-600 px-3 py-2 hover:bg-red-500 rounded-md  ">Shop Now</button>
+                        </NavLink>
                     </div>
                 </div>
 
@@ -58,9 +65,11 @@ const MultiBanner = () => {
                     <img src="/assets/shirts2.jpg" alt="New Arrival" className='w-full h-full object-cover rounded-lg shadow-lg' />
                     <div className="absolute inset-0 bg-gray-800 rounded-lg bg-opacity-50 flex flex-col items-center justify-center ">
                         <h2 className="text-white text-2xl font-bold "> New Arrivals </h2>
-                        <button className='mt-2 px-3 bg-white text-green-800 py-1  rounded-md shadow hover:bg-gray-200' >
-                            Discover
-                        </button>
+                        <NavLink to="/men">
+                            <button className='mt-2 px-3 bg-white text-green-800 py-1  rounded-md shadow hover:bg-gray-200' >
+                                Discover
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
 

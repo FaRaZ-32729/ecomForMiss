@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Banner = () => {
   return (
@@ -12,7 +13,9 @@ const Banner = () => {
                 <p className='text-lg md:text-xl mb-6' >
                     Shop The Latest Trend And Find Your Look
                 </p>
+                <NavLink to="/men">
                 <button className='bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-300 '  >Shop Now</button>
+                </NavLink>
             </div>
         </div>
       </div>

@@ -68,8 +68,8 @@ const AddProduct = () => {
                 <div className='my-2'>
                     <label htmlFor="productImage">
                         <img
-                            className='h-32 w-32 object-contain border border-gray-300 rounded cursor-pointer'
-                            src={image ? URL.createObjectURL(image) : 'https://via.placeholder.com/150?text=Upload'}
+                            className='h-32 w-32 p-2 object-contain border border-gray-300 rounded cursor-pointer'
+                            src={image ? URL.createObjectURL(image) : '/assets/upload.svg'}
                             alt="Upload"
                         />
                         <input

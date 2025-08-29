@@ -21,6 +21,9 @@ import UpdateProduct from './pages/admin/UpdateProduct';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallrey from './pages/Gallrey';
+import Messages from './pages/admin/Messages';
+import AddGallery from './pages/admin/AddGallrey';
+import ListGallrey from './pages/admin/ListGallrey';
 // import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
@@ -46,6 +49,9 @@ const App = () => {
           <Route path='add-product' element={<AddProduct />} />
           <Route path='all-products' element={<ListProducts />} />
           <Route path='update-product/:id' element={<UpdateProduct />} />
+          <Route path='message' element={<Messages />} />
+          <Route path='add-image' element={<AddGallery />} />
+          <Route path='all-images' element={<ListGallrey />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
